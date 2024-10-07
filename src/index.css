@@ -1,0 +1,97 @@
+src/
+├── components/
+│   ├── Header.js
+│   ├── AddEvent.js
+│   ├── EventList.js
+│   └── Event.js
+├── styles/
+│   └── main.css
+└── App.js
+
+
+
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #eee;
+  margin: 0;
+}
+h1 {
+  padding: 20px;
+  margin: 0 0 20px;
+  background-color: white;
+  text-align: center;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+.add-box {
+  background-color: white;
+  padding: 20px;
+}
+.add-box h2 {
+  margin: 0 0 20px;
+}
+.add-box input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f4f3f3;
+}
+.add-box input:focus {
+  outline: none;
+}
+.add-box .add {
+  padding: 15px;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.events .event {
+  background-color: white;
+  padding: 20px;
+}
+.events .event h3 {
+  margin: 0 0 20px;
+}
+.events .event p {
+  display: flex;
+  justify-content: space-between;
+}
+.events .event p:not(:last-of-type) {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.events .event button {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #03a9f4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
